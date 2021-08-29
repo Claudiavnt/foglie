@@ -1,22 +1,24 @@
- // create your variables.
-         let selBrush = 0;
 
-          let leaf;
-          let brush;
-          let eraserImage;
-          let yellow;
-          let red;
-          let orange;
-          let save;
-          let eraserBrush;
+          // create your variables.
+          int selBrush = 0;
 
-        var easing = 0.05
-		var x = 250;
-		var y = 300;
+          PImage leaf;
+          PImage brush;
+          PImage eraserImage;
+          PImage yellow;
+          PImage red;
+          PImage orange;
+          PImage save;
 
-		//preload your images and fonts.
+          float easing = 0.05;
+          int x = 250;
+          int y = 300;
 
-function preload() {
+          void setup() {
+            size(600, 500);
+            background(255);
+            stroke(255, 255, 255);
+            strokeWeight(4);
             leaf = loadImage("leaf.png");
             brush = loadImage("brush.png");
             eraserImage = loadImage("EraserImage.png");
@@ -24,17 +26,9 @@ function preload() {
             red = loadImage("red.png");
             orange = loadImage("orange.png");
             save = loadImage("save.png");
-            eraserBrush = loadImage("EraserBrush.png");
-}
+          }//close setup
 
-          function setup() {
-            createCanvas(600, 500);
-            background(255);
-            stroke(255, 255, 255);
-            strokeWeight(4);
-            }
-
-           function draw() {
+          void draw() {
             fill(255);
             rectMode(CENTER);
             fill(82,99,59);
@@ -56,7 +50,7 @@ function preload() {
             //save image
             image(save, 535, 430, 60, 60);
 
-                        if (mouseIsPressed) {
+            if (mousePressed) {
               if (mouseX > 525) {
                 //foglia
                 if (mouseY > 0 && mouseY < 68) selBrush = 8;
@@ -72,7 +66,7 @@ function preload() {
                 else if (mouseY > 332 && mouseY < 376) selBrush = 6;
                 //save
                 else if (mouseY > 433 && mouseY < 488) {
-                   let img = get(0, 0, width, height);
+                   PImage img = get(0, 0, width, height);
                    img.save("drawing.png");
                 };
               } else {
@@ -89,7 +83,7 @@ function preload() {
                 };
                 }
                 else if (selBrush == 1)
-                image(eraserBrush, x - 50, y - 50);
+                image(loadImage("EraserBrush.png"), x - 50, y - 50);
               }
 
             }

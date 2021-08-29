@@ -23,8 +23,9 @@ body {
 }
 
 canvas {
-    width: 1020px;
-    max-height: 400px;
+    width: 800px!important;
+    height: 700px!important;
+    margin-left: 0%;
 }
 
 .title-draw {
