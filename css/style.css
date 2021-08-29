@@ -1,0 +1,130 @@
+body {
+    background-color: #45512D;
+    height: max-content;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: white;
+    margin: -15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 65px;
+    width: 1020px;
+    max-height: 600px;
+}
+
+.container-green {
+    margin: -15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 1020px;
+}
+
+canvas {
+    width: 1020px;
+    max-height: 400px;
+}
+
+.title-draw {
+    color:white;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-left: 60px;
+    margin-top: 6px;
+}
+
+.container-draw {
+    background-color: white;
+    width: 1020px;
+    max-height: 600px;
+}
+
+.btn {
+    min-width: 250px;
+    font-size: 20px;
+}
+
+.btn-success {
+    background-color: #45512D;
+    border-color: #45512D;
+    margin-bottom: 30px;
+}
+
+.btn-outline-success {
+    background-color: transparent;
+    border-color: white;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    color:white;
+}
+
+.btn-outline-success-green {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top:-5%;
+    color:#45512D;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active{
+    background-color: #5d6a44;
+    border-color: #5d6a44;
+}
+
+.section-button {
+    margin:0 auto;
+    text-align: center;
+}
+
+.header-top{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.img-foglia img{
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.img-foglia-logo img{
+    width: 15%;
+    margin-bottom: 10px;
+}
+
+.img-foglia-logo {
+    margin-top: -1%;
+}
+
+.img-foglia-logo a {
+    font-size:20px;
+    color:black
+}
+
+.img-foglia-white img{
+    width: 5%;
+    float: left;
+}
+
+.gallery-title {
+    font-size:15px;
+    border-bottom: 1px solid #5d6a44;
+    color: #5d6a44;
+    text-align: start;
+}
+
+.button-plus-title {
+    font-size:20px;
+    color: #5d6a44;
+    text-align: end;
+}
+
+.text-dark {
+    color: #5d6a44;
+}
